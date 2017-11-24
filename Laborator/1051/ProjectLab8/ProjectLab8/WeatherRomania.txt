@@ -1,0 +1,16 @@
+Weather report
+
+Location: Bucharest
+Temperature recordings: ## - ## - ## - ## - ## - ## - ## - ## - ## - ## 16.7 ## 19
+Location: Ploiesti
+Temperature recordings: ## - ## - ## 3 ## - ## - ## 5.3Weather report
+
+Location: Bucharest
+Temperature recordings: ## - ## - ## - ## - ## - ## - ## - ## - ## - ## 16.7 ## 19
+Location: Ploiesti
+Temperature recordings: ## - ## - ## 3 ## - ## - ## 5.3Weather report
+
+Location: Bucharest
+Temperature recordings: ## - ## - ## - ## - ## - ## - ## - ## - ## - ## 16.7 ## 19
+Location: Ploiesti
+Temperature recordings: ## - ## - ## 3 ## - ## - ## 5.3

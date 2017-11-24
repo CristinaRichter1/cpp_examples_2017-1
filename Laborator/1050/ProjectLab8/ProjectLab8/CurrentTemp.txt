@@ -1,0 +1,17 @@
+		 The current temp report
+Station name Bucharest
+Recorded temps:  14.2 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 23
+Station name Brasov
+Recorded temps:  -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 17.6		 The current temp report
+Station name Bucharest
+Recorded temps:  14.2 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 23
+Station name Brasov
+Recorded temps:  -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 17.6		 The current temp report
+Station name Bucharest
+Recorded temps:  14.2 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 23
+Station name Brasov
+Recorded temps:  -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 17.6		 The current temp report
+Station name Bucharest
+Recorded temps:  14.2 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 23
+Station name Brasov
+Recorded temps:  -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 -273.15 17.6
