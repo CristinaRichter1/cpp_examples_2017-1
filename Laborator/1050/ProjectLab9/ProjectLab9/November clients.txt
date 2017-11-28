@@ -1,0 +1,8 @@
+		 Current list of clients
+The online store clients data is:
+
+The card owner is Alice
+Points:21
+
+The card owner is Bob
+Points:13

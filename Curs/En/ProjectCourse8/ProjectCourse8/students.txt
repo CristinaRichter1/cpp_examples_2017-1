@@ -1,8 +1,8 @@
 The students are 
-Numele studentului este Gigel, are codul 23 si este la facultatea CSIE
+Numele studentului este John, are codul 23 si este la facultatea CSIE
 Note: 10 9
 Numele studentului este Ionel, are codul 22 si este la facultatea MK
 Note:
 The students from the list are 
-Gigel
+John
 Ionel
