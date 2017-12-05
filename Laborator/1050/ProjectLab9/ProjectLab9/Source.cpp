@@ -221,6 +221,61 @@ public:
 		file.close();
 	}
 
+	//deserialization
+	void loadData(char* fileName) {
+		ifstream inputFile;
+		inputFile.open(fileName, ios::in | ios::binary);
+		if (inputFile.is_open()) {
+			//read number of clients
+			inputFile.read((char*) &this->noClients, sizeof(int));
+			//create the clients array
+			delete [] this->clientCards;
+			this->clientCards = new BonusCard[this->noClients];
+			//read the clients data
+			for (int i = 0; i < this->noClients; i++) {
+				//use the BonusCard public interface
+				//other option - implement a specific method in BonusCard
+				char nameBuffer[50];
+				inputFile.read(nameBuffer, sizeof(nameBuffer));
+				int noPoints;
+				inputFile.read((char*) &noPoints, sizeof(int));
+				int* points = new int[noPoints];
+				for (int j = 0; j < noPoints; j++)
+					inputFile.read((char*) &points[j], sizeof(int));
+				this->clientCards[i].setOwner(nameBuffer);
+				this->clientCards[i].setPoints(points, noPoints);
+			}
+			inputFile.close();
+		}
+	}
+
+	void loadTextData(char* fileName) {
+		ifstream inputFile;
+		inputFile.open(fileName, ios::in);
+		if (inputFile.is_open()) {
+			//read number of clients
+			inputFile>>this->noClients;
+			//create the clients array
+			delete [] this->clientCards;
+			this->clientCards = new BonusCard[this->noClients];
+			//read the clients data
+			for (int i = 0; i < this->noClients; i++) {
+				//use the BonusCard public interface
+				//other option - implement a specific method in BonusCard
+				char nameBuffer[50];
+				inputFile>>nameBuffer;
+				int noPoints;
+				inputFile>>noPoints;
+				int* points = new int[noPoints];
+				for (int j = 0; j < noPoints; j++)
+					inputFile>>points[j];
+				this->clientCards[i].setOwner(nameBuffer);
+				this->clientCards[i].setPoints(points, noPoints);
+			}
+			inputFile.close();
+		}
+	}
+
 	friend ostream& operator<<(ostream& console, OnlineStore& store);
 };
 
@@ -235,20 +290,25 @@ ostream& operator<<(ostream& console, OnlineStore& store) {
 
 void main() {
 	OnlineStore store;
-	store.registerNewClient("Alice");
-	store.registerNewClient("Bob");
+	//store.registerNewClient("Alice");
+	//store.registerNewClient("Bob");
 
-	int pointsAlice [] = { 10,5,6 };
-	int pointsBob [] = { 4,9 };
+	//int pointsAlice [] = { 10,5,6 };
+	//int pointsBob [] = { 4,9 };
 
-	store.clientCards[0].setPoints(pointsAlice, 3);
-	store.clientCards[1].setPoints(pointsBob, 2);
+	//store.clientCards[0].setPoints(pointsAlice, 3);
+	//store.clientCards[1].setPoints(pointsBob, 2);
 
+	//cout << store;
+
+	//store.generateReport("November clients.txt");
+
+	////serialize data
+	//store.saveData("Backup.dat");
+
+	//test load
+	store.loadData("Backup.dat");
 	cout << store;
-
-	store.generateReport("November clients.txt");
-
-	//serialize data
-	store.saveData("Backup.dat");
-
+	store.loadTextData("ClientsData.txt");
+	cout << store;
 }
