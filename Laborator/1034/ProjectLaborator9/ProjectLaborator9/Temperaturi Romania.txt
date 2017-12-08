@@ -1,0 +1,9 @@
+		 Raport meteo
+Lista orase
+Bucuresti
+Ploiesti
+Info
+Locatie: Bucuresti
+Temperaturi: -  -  -  6.2 -  -  -  10.56 -  -  14.2
+Locatie: Ploiesti
+Temperaturi: -  -  -  -  -  -  -  -  -  12.9
